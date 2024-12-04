@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+</head>
+<body>
+    <div class="calculator" id="calculator">
+        <h1>Hi! Sharad</h1>
+        <p id="dynamic-text">Want to</p>
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <input type="button" value="7" onclick="appendToDisplay('7')">
+            <input type="button" value="8" onclick="appendToDisplay('8')">
+            <input type="button" value="9" onclick="appendToDisplay('9')">
+            <input type="button" value="/" onclick="appendToDisplay('/')">
+            <input type="button" value="4" onclick="appendToDisplay('4')">
+            <input type="button" value="5" onclick="appendToDisplay('5')">
+            <input type="button" value="6" onclick="appendToDisplay('6')">
+            <input type="button" value="*" onclick="appendToDisplay('*')">
+            <input type="button" value="1" onclick="appendToDisplay('1')">
+            <input type="button" value="2" onclick="appendToDisplay('2')">
+            <input type="button" value="3" onclick="appendToDisplay('3')">
+            <input type="button" value="+" onclick="appendToDisplay('+')">
+            <input type="button" value="-" onclick="appendToDisplay('-')">
+            <input type="button" value="0" onclick="appendToDisplay('0')">
+            <input type="button" value="(" onclick="appendToDisplay('(')">
+            <input type="button" value=")" onclick="appendToDisplay(')')">
+            <input type="button" value="Clear" onclick="clearDisplay()">
+            <input type="button" value="=" onclick="calculateResult()">
+            <input type="button" value="sin" onclick="appendToDisplay('Math.sin(')">
+            <input type="button" value="cos" onclick="appendToDisplay('Math.cos(')">
+            <input type="button" value="tan" onclick="appendToDisplay('Math.tan(')">
+            <input type="button" value="√" onclick="appendToDisplay('Math.sqrt(')">
+        </div>
+        <div class="color-picker">
+            <p style="font-family: 'Courier New', Courier, monospace; color: yellow;">Color Me:</p>
+            <div class="color-options">
+                <button class="color-option" style="background-color: brown;" onclick="changeColor('brown')"></button>
+                <button class="color-option" style="background-color: blue;" onclick="changeColor('blue')"></button>
+                <button class="color-option" style="background-color: green;" onclick="changeColor('green')"></button>
+                <button class="color-option" style="background-color: skyblue;" onclick="changeColor('skyblue')"></button>
+                <button class="color-option" style="background-color: pink;" onclick="changeColor('pink')"></button>
+                <button class="color-option" style="background-color: grey;" onclick="changeColor('grey')"></button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
